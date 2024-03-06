@@ -21,9 +21,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;S
-    max-width: 1200px;
+    margim-width: 1200px;
     width: 100%;
-    margin : 0 auto;
+    margin; 0 auto;
 }
 
 .titulo-principal{
@@ -52,6 +52,7 @@ border-right: 4px solid var(--botao-ativo);
 border-top: none;
 }
 
+
 .botao:first-child{
     border-radius: 40px 40px 0 0;
 }
@@ -59,7 +60,16 @@ border-top: none;
 .botoes{
     display: block ;
 }
+
+.ativo {
+    background-color: var(--botao-ativa);
+    border-bottom: 4px solid var(--verde);
+}
+
 @media screen and (min: width 768px;) {
+
+
+
     .botoes{
         display: flex;    
 }
