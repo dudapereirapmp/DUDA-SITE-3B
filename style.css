@@ -23,7 +23,7 @@ body{
     align-items: center;S
     margim-width: 1200px;
     width: 100%;
-    margin; 0 auto;
+    margin: 0 auto;
 }
 
 .titulo-principal{
@@ -33,7 +33,7 @@ body{
 }
 
 .titulo-principal span{
-    color: var(--rosa);
+    color: var(--rosa); <div class="abas-textos">
 }
 
 .botao{
@@ -61,9 +61,34 @@ border-top: none;
     display: block ;
 }
 
-.ativo {
+.botao.ativo {
     background-color: var(--botao-ativa);
     border-bottom: 4px solid var(--verde);
+}
+
+  abas-textos{
+  background-color: var(--texto-fundo);
+padding: 40px;
+border-radius:0 0 40px 40px;
+  }
+.aba.conteudo.ativo{
+    display: block;
+}
+
+.aba.conteudo{
+    display: none;
+}
+
+
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
 }
 
 @media screen and (min: width 768px;) {
