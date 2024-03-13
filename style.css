@@ -17,7 +17,7 @@ body{
 
 
 .conteudo-principal{
-    display: flex;
+    display: flex;let tempoAtual= new Date()
     flex-direction: column;
     justify-content: center;
     align-items: center;S
@@ -79,16 +79,18 @@ border-radius:0 0 40px 40px;
     display: none;
 }
 
-
 .aba-conteudo-titulo-principal{
     font-size: 28px;
     text-align: center;
 }
-
 .aba-conteudo-titulo-secundario{
     text-align: center;
     color: var(--verde);
     text-transform: uppercase;
+}
+.contador{
+ font-size: 20px;
+ text-align: center;
 }
 
 @media screen and (min: width 768px;) {
