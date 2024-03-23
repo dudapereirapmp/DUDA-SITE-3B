@@ -17,11 +17,11 @@ body{
 
 
 .conteudo-principal{
-    display: flex;let tempoAtual= new Date()
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;S
-    margim-width: 1200px;
+    align-items: center;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
@@ -33,7 +33,7 @@ body{
 }
 
 .titulo-principal span{
-    color: var(--rosa); <div class="abas-textos">
+    color: var(--rosa);
 }
 
 .botao{
@@ -113,19 +113,19 @@ border-radius:0 0 40px 40px;
 
 }
 
-@media screen and (min: width 768px;) {
-
-
-
+@media screen and (min-width: 768px) {
     .botoes{
         display: flex;    
 }
+
 .botao:first-child{
-border-radius: 40px 0 0 0;
+  border-radius: 40px 0 0 0;
 }
+
 .botao:last-child{
     border-radius: 0 40px 0 0;
 }
+
 }
 
 
