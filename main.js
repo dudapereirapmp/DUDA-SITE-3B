@@ -1,5 +1,5 @@
 const botoes = document.querySelectorAll(".botao");
-const textos = document.querySelectorAll("aba-conteudo");
+const textos = document.querySelectorAll(".aba-conteudo");
 
 for(let i=0;i <botoes.length;i++){
     botoes[i].onclik=function(){
@@ -10,7 +10,7 @@ for(let i=0;i <botoes.length;i++){
         }
 
     botoes[i].classList.add("ativo");
-    textos[i].classList.add("ativo")
+    textos[i].classList.add("ativo");
     }  
 }
 
@@ -20,7 +20,7 @@ const tempoObjetivo2 = new Date ("2024-12-05t00:00:00");
 const tempoObjetivo3 = new Date ("2024-12-30t00:00:00");
 const tempoObjetivo4 = new Date ("2025-02-05t00:00:00");
 
-const tempos = [ tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
+const tempos = [ tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
 
 
 function calculatempo(tempoObjetivo){
