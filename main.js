@@ -5,15 +5,15 @@ for(let i=0;i <botoes.length;i++){
     botoes[i].onclik=function(){
 
         for(let j=0;j<botoes.length;j++){
-        botoes[j].classList.remove("ativo")
-        textos[j].classList.remove("ativo")
+             botoes[j].classList.remove("ativo")
+            textos[j].classList.remove("ativo")
         }
 
     botoes[i].classList.add("ativo");
     textos[i].classList.add("ativo")
-    }
-    
+    }  
 }
+
 const contadores = document.querySelectorAll("contador");
 const tempoObjetivo1 = new Date ("2010-10-05t00:00:00");
 const tempoObjetivo2 = new Date ("2024-12-05t00:00:00");
@@ -34,15 +34,15 @@ function calculatempo(tempoObjetivo){
     segundos %=60;
     minutos %=60;
     horas %=24;
-   if(tempoFinal > 0){
+    if(tempoFinal > 0){
     return [dias,horas,minutos,segundos];
-   } else {
+    } else {
     return [0,0,0,0];
    }
 }
 
 function atualizaCronometro(){
-    for (let i=0; i<contadores.length;i++ ){
+for (let i=0; i<contadores.length;i++ ){
     document.getElementById("dias"+i).textContent=calculatempo(tempos[i])[0];
     document.getElementById("horas"+i).textContent=calculatempo(tempos[i])[1];
     document.getElementById("min"+i).textContent=calculatempo(tempos[i])[2];
