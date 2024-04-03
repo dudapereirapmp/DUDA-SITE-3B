@@ -14,7 +14,7 @@ for(let i=0;i <botoes.length;i++){
     }  
 }
 
-const contadores = document.querySelectorAll("contador");
+const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date ("2010-10-05t00:00:00");
 const tempoObjetivo2 = new Date ("2024-12-05t00:00:00");
 const tempoObjetivo3 = new Date ("2024-12-30t00:00:00");
@@ -42,17 +42,17 @@ function calculatempo(tempoObjetivo){
 }
 
 function atualizaCronometro(){
-    for (let i=0; i<contadores.length;i++ ){
-        document.getElementById("dias"+i).textContent=calculatempo(tempos[i])[0];
-        document.getElementById("horas"+i).textContent=calculatempo(tempos[i])[1];
-        document.getElementById("min"+i).textContent=calculatempo(tempos[i])[2];
-        document.getElementById("seg"+i).textContent=calculatempo(tempos[i])[3];
+    for (let i=0; i<contadores.length;i++){
+        document.getElementById("dias"+i).textContent = calculatempo(tempos[i])[0];
+        document.getElementById("horas"+i).textContent = calculatempo(tempos[i])[1];
+        document.getElementById("min"+i).textContent = calculatempo(tempos[i])[2];
+        document.getElementById("seg"+i).textContent = calculatempo(tempos[i])[3];
     }
 }
 
 function comecaCronometro(){
     atualizaCronometro();
-setInterval(atualizaCronometro,1000);
+    setInterval(atualizaCronometro, 1000);
 }
 
 comecaCronometro();
